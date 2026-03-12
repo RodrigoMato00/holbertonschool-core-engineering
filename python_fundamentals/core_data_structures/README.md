@@ -12,3 +12,4 @@ Lists, tuples, sets, dictionaries: iterate, access, and manipulate without mutat
 - **5. Common elements in two sets** — `common_elements.py`: return new set of elements in both set_1 and set_2 (intersection).
 - **6. Update or add key/value in a dictionary** — `update_dictionary.py`: replace or add key/value, return updated dict.
 - **7. Best score** — `best_score.py`: return key with biggest integer value; None if dict None or empty.
+- **8. Quiz** — Sin archivo; preguntas en la plataforma (Core Data Structures).
