@@ -10,3 +10,4 @@ Functions, return vs print, modules, and `if __name__ == "__main__"`.
 - **3. a ^ b** — `pow.py`: return a**b without ** or imports, using a loop.
 - **5. Import a Simple Function** — `add_0.py`: defines add(a,b), imports it in __main__, prints 1 + 2 = 3; no execution when imported.
 - **6. My First Toolbox** — `calculator_1.py` (add/sub/mul/div) + `calculation.py`: imports and prints 10+5, 10-5, 10*5, 10/5; no execution when imported.
+- **7. Everything Can Be Imported** — `variable_load_5.py` (a=98) + `variable_load.py`: imports a and prints it; no execution when imported.
