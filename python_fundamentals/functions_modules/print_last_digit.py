@@ -2,5 +2,5 @@
 def print_last_digit(number):
     """Print last digit (positive) and return it. No extra text."""
     digit = abs(number) % 10
-    print(digit)
+    print("{}".format(digit), end="")
     return digit
