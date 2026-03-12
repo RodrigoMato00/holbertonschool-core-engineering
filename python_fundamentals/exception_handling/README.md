@@ -5,3 +5,4 @@ try/except, specific exception types, else/finally, raising exceptions.
 ## Tasks
 
 - **0. Safe list printing** — `safe_print_list.py`: print at most x elements of a list, return count; no exception if x > len(list).
+- **1. Safe integer printing** — `safe_print_integer.py`: print value with `{:d}` if int, return True; else return False.
