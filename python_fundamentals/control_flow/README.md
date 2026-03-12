@@ -8,3 +8,4 @@ Python control flow: conditionals (`if`, `elif`, `else`) and loops.
 - **1. The last digit** — `last_digit.py`: print the last digit of a random number and whether it's greater than 5, zero, or less than 6 and not 0.
 - **2. Alphabet Game (Lowercase)** — `print_alphabt.py`: print lowercase alphabet excluding q and e (continuous, one line).
 - **3. Hexadecimal Printing** — `print_hexa.py`: print numbers 0 to 98 in decimal and hex (one loop, one print with format).
+- **4. 00...99** — `print_comb2.py`: print 0 to 99 as two-digit numbers (00, 01, … 99) with comma+space, no trailing comma.
