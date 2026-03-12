@@ -6,4 +6,3 @@ def islower(c):
         return 97 <= ord(c) <= 122
     except (TypeError, AttributeError):
         return False
-
