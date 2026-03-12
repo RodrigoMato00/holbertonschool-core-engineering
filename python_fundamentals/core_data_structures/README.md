@@ -10,3 +10,4 @@ Lists, tuples, sets, dictionaries: iterate, access, and manipulate without mutat
 - **3. Print a matrix of integers** — `print_matrix_integer.py`: print 2D list, one row per line, values separated by space.
 - **4. Tuple addition** — `add_tuple.py`: return new tuple of two ints (element-wise sum); missing=0, ignore beyond first two.
 - **5. Common elements in two sets** — `common_elements.py`: return new set of elements in both set_1 and set_2 (intersection).
+- **6. Update or add key/value in a dictionary** — `update_dictionary.py`: replace or add key/value, return updated dict.
