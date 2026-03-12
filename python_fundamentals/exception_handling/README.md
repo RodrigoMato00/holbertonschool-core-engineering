@@ -9,3 +9,4 @@ try/except, specific exception types, else/finally, raising exceptions.
 - **2. Safe list printing with type handling** — `safe_print_list_integers.py`: from first x elements, print only integers, skip others; return count.
 - **3. Divide two integers safely** — `safe_print_division.py`: divide a/b in try; ZeroDivisionError → "division by 0"; other → "Inside result: None"; finally print "Inside result: &lt;result&gt;"; return result or None.
 - **4. Raise exception** — `raise_exception.py`: function that raises TypeError.
+- **5. Raise a message** — `raise_exception_msg.py`: raises NameError with custom message.
