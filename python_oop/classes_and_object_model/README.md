@@ -10,3 +10,4 @@ Object-Oriented Programming in Python: define classes, create instances, manage 
 - **3. Area of a Square** — `3-square.py`: Add `area(self)` returning the square area (size²).
 - **4. Access and Update Private Attribute** — `4-square.py`: Getter/setter for `size` (same validation); access via `my_square.size`.
 - **5. Printing a Square** — `5-square.py`: Method `my_print(self)` prints the square with `#`; if size is 0, print empty line.
+- **6. Print Square Instance** — `6-square.py`: `__str__()` returns string representation (like my_print); `position=(x,y)` for offset.
