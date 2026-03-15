@@ -8,3 +8,4 @@ Class hierarchy: BaseGeometry → Rectangle → Square. Reuse and override behav
 - **1. Rectangle** — `1-rectangle.py`: Class `Rectangle(BaseGeometry)` with width and height validated via `integer_validator`.
 - **2. Full Rectangle** — `2-rectangle.py`: Rectangle with `area()` and `__str__()` (readable representation).
 - **3. Square #1** — `1-square.py`: Class `Square(Rectangle)`; constructor receives `size`, initializes parent with `(size, size)`.
+- **4. Square #2** — `2-square.py`: Square with custom `__str__()` returning `[Square] width/height`.
