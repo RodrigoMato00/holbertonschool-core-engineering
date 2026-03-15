@@ -5,3 +5,4 @@ Object-Oriented Programming in Python: define classes, create instances, manage 
 ## Tasks
 
 - **0. My First Square** — `0-square.py`: Define an empty class `Square` (no attributes or methods).
+- **1. Square with Size** — `1-square.py`: Class `Square` with private instance attribute `__size` set in `__init__`.
