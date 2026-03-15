@@ -11,3 +11,4 @@ Object-Oriented Programming in Python: define classes, create instances, manage 
 - **4. Access and Update Private Attribute** — `4-square.py`: Getter/setter for `size` (same validation); access via `my_square.size`.
 - **5. Printing a Square** — `5-square.py`: Method `my_print(self)` prints the square with `#`; if size is 0, print empty line.
 - **6. Print Square Instance** — `6-square.py`: `__str__()` returns string representation (like my_print); `position=(x,y)` for offset.
+- **7. Rectangle Class** — `1-rectangle.py`: Class `Rectangle` with private `width` and `height`, getters/setters (int, >= 0). `__init__(self, width=0, height=0)`.
