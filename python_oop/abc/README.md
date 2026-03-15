@@ -8,3 +8,4 @@ ABC, abstract methods, interface-like design, duck typing, mixins.
 - **1. Shapes, Interfaces, Duck Typing** — `shapes.py`: Abstract `Shape` (area, perimeter); `Circle`, `Rectangle`; `shape_info(shape)` by duck typing.
 - **2. FlyingFish (multiple inheritance)** — `flyingfish.py`: `Fish` (swim, habitat), `Bird` (fly, habitat), `FlyingFish(Fish, Bird)` overriding fly, swim, habitat.
 - **3. Dragon (mixins)** — `dragon.py`: `SwimMixin` (swim), `FlyMixin` (fly), `Dragon(SwimMixin, FlyMixin)` with `roar()`.
+- **4. VerboseList** — `verboselist.py`: Subclass of `list`; override `append`, `extend`, `remove`, `pop` to print a message each time.
