@@ -9,7 +9,8 @@ class Square(Rectangle):
     """Square: rectangle with width == height; __str__ returns [Square] w/h."""
 
     def __init__(self, size):
-        """Initialize square; pass size as width and height to parent."""
+        """Initialize square; validate size then pass to parent."""
+        self.integer_validator("size", size)
         super().__init__(size, size)
 
     def __str__(self):
