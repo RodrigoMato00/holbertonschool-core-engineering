@@ -13,7 +13,7 @@ async def connection_handler(websocket):
     CONNECTED.add(websocket)
     try:
         async for message in websocket:
-            payload = f"B:{message}"
+            payload = f"DIF:{message}"
             for client in list(CONNECTED):
                 await client.send(payload)
     finally:
