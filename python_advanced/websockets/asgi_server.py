@@ -16,7 +16,7 @@ async def websocket_endpoint(websocket):
     try:
         while True:
             message = await websocket.receive_text()
-            await websocket.send_text(message)
+            await websocket.send_text(f"DIF:{message}")
     except WebSocketDisconnect:
         pass
 
