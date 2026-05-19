@@ -9,7 +9,7 @@ import websockets
 async def connection_handler(websocket):
     """Echo each text message back to the same client."""
     async for message in websocket:
-        await websocket.send(f"ECO:{message}")
+        await websocket.send(message)
 
 
 async def main():
