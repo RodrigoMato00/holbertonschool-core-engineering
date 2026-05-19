@@ -4,16 +4,20 @@
 import asyncio
 
 import websockets
+from websockets.exceptions import ConnectionClosed
 
 
 async def connection_handler(websocket):
-    """Validate each message; reply OK:{text} or ERR:EMPTY."""
-    async for message in websocket:
-        trimmed = message.strip()
-        if trimmed == "":
-            await websocket.send("ERR:EMPTY")
-        else:
-            await websocket.send(f"OK:{trimmed}")
+    """Validate each message; reply OK:{text} or ERR:VACIO."""
+    try:
+        async for message in websocket:
+            trimmed = message.strip()
+            if trimmed == "":
+                await websocket.send("ERR:VACIO")
+            else:
+                await websocket.send(f"OK:{trimmed}")
+    except ConnectionClosed:
+        pass
 
 
 async def main():
