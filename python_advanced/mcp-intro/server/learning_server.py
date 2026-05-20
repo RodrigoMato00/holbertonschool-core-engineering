@@ -57,5 +57,27 @@ def search_topics(query: str) -> list[dict]:
     return [_topic_result(t) for t in topics if _topic_matches(t, query)]
 
 
+def _find_topic_by_id(topic_id: str) -> dict | None:
+    tid = topic_id.strip()
+    if not tid:
+        return None
+    for topic in _load_topics():
+        if topic.get("id") == tid:
+            return topic
+    return None
+
+
+@mcp.tool
+def get_topic_details(topic_id: str) -> dict:
+    """Return full information for a topic by id."""
+    topic = _find_topic_by_id(topic_id)
+    if topic is None:
+        return {
+            "error": f"Topic not found: {topic_id!r}",
+            "available_ids": [t.get("id") for t in _load_topics()],
+        }
+    return dict(topic)
+
+
 if __name__ == "__main__":
     mcp.run()
