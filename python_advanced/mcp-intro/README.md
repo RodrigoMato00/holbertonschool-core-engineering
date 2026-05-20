@@ -40,6 +40,7 @@ mcp-intro/
 - **Task 4:** MCP tool `search_topics` on the server.
 - **Task 5:** MCP tool `get_topic_details` on the server.
 - **Task 6:** read-only resource `topics://catalog`.
+- **Task 7:** server tested with `client/mcp_client.py` (and optional MCP Inspector).
 
 ## Requirements
 
@@ -56,4 +57,52 @@ python3 server/learning_server.py
 
 The server uses stdio transport by default. Do not print debug messages to stdout while it runs.
 
-Setup for clients and agents will be added in later tasks.
+For **MCP Inspector** or HTTP clients:
+
+```bash
+python3 server/learning_server.py --http
+# Server URL: http://localhost:8000/mcp
+```
+
+## Test the server (Task 7)
+
+From `mcp-intro/` with dependencies installed:
+
+```bash
+python3 client/mcp_client.py
+```
+
+The script connects to the server in-process, lists tools and resources, calls both tools, reads `topics://catalog`, and checks invalid `topic_id` handling.
+
+### Sample output (excerpt)
+
+**Tools listed:**
+
+```text
+Tools: ['get_topic_details', 'search_topics']
+```
+
+**search_topics** with `query=decorator` returns at least:
+
+```json
+[
+  {
+    "id": "python-decorators",
+    "title": "Python Decorators",
+    "summary": "Decorators wrap functions or methods..."
+  }
+]
+```
+
+**get_topic_details** with invalid id returns:
+
+```json
+{
+  "error": "Topic not found: 'not-a-real-topic'",
+  "available_ids": ["python-decorators", "..."]
+}
+```
+
+**topics://catalog** returns a JSON array of `id` and `title` for all six topics.
+
+Agents and full README sections will be added in later tasks.

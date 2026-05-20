@@ -90,4 +90,9 @@ def get_topic_catalog() -> str:
 
 
 if __name__ == "__main__":
-    mcp.run()
+    import sys
+
+    if len(sys.argv) > 1 and sys.argv[1] == "--http":
+        mcp.run(transport="http", port=8000)
+    else:
+        mcp.run()
