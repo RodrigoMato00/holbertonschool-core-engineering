@@ -1,3 +1,111 @@
 {
-  "topics": []
+  "topics": [
+    {
+      "id": "python-decorators",
+      "title": "Python Decorators",
+      "summary": "Decorators wrap functions or methods to add behavior (logging, timing, access control) without changing the wrapped function's source code.",
+      "prerequisites": ["Functions", "Scope", "First-class functions"],
+      "key_concepts": [
+        "Higher-order functions",
+        "Wrapper functions",
+        "functools.wraps",
+        "Decorator syntax with @"
+      ],
+      "common_mistakes": [
+        "Forgetting to return the wrapper function from the outer function",
+        "Not using functools.wraps, which hides the original function metadata",
+        "Applying a decorator that expects arguments without using a decorator factory"
+      ],
+      "practice_idea": "Create a decorator that logs the function name and arguments each time the wrapped function is called."
+    },
+    {
+      "id": "python-list-comprehensions",
+      "title": "Python List Comprehensions",
+      "summary": "List comprehensions build new lists from iterables in a compact expression, often replacing simple for-loops and map/filter patterns.",
+      "prerequisites": ["Lists", "for loops", "Conditional expressions"],
+      "key_concepts": [
+        "Syntax [expr for item in iterable if condition]",
+        "Readability versus nested comprehensions",
+        "Generator expressions with parentheses"
+      ],
+      "common_mistakes": [
+        "Building a comprehension only for side effects instead of using a plain loop",
+        "Creating overly nested comprehensions that are hard to read",
+        "Shadowing variable names used after the comprehension"
+      ],
+      "practice_idea": "Given a list of words, build a list of lengths for words with more than three characters."
+    },
+    {
+      "id": "http-status-codes",
+      "title": "HTTP Status Codes",
+      "summary": "HTTP status codes tell clients whether a request succeeded, failed, or needs another action. They are grouped into classes (1xx–5xx).",
+      "prerequisites": ["HTTP basics", "Client-server model"],
+      "key_concepts": [
+        "2xx success (200 OK, 201 Created)",
+        "4xx client errors (400 Bad Request, 404 Not Found)",
+        "5xx server errors (500 Internal Server Error)",
+        "When to return which code in APIs"
+      ],
+      "common_mistakes": [
+        "Returning 200 for every response even when an error occurred",
+        "Using 404 when 403 (forbidden) is more accurate",
+        "Ignoring status codes when debugging API clients"
+      ],
+      "practice_idea": "Match five short scenarios (invalid JSON body, missing route, successful create) to the most appropriate status code."
+    },
+    {
+      "id": "python-virtual-environments",
+      "title": "Python Virtual Environments",
+      "summary": "Virtual environments isolate project dependencies so each project can use its own package versions without affecting the system Python.",
+      "prerequisites": ["pip", "Command line basics"],
+      "key_concepts": [
+        "venv module",
+        "Activating and deactivating an environment",
+        "requirements.txt",
+        "Why not install everything globally"
+      ],
+      "common_mistakes": [
+        "Installing packages globally and then wondering why imports fail in another project",
+        "Forgetting to activate the venv before pip install",
+        "Committing the venv folder to version control"
+      ],
+      "practice_idea": "Create a new venv, install one package, and export the dependency list to a requirements file."
+    },
+    {
+      "id": "recursion-basics",
+      "title": "Recursion Basics",
+      "summary": "Recursion solves problems by having a function call itself on smaller subproblems until a base case stops the chain.",
+      "prerequisites": ["Functions", "Call stack concept", "Base and recursive cases"],
+      "key_concepts": [
+        "Base case",
+        "Recursive case",
+        "Stack overflow risk",
+        "When iteration is simpler"
+      ],
+      "common_mistakes": [
+        "Missing or incorrect base case leading to infinite recursion",
+        "Not returning the result of the recursive call when needed",
+        "Using recursion when a simple loop is clearer"
+      ],
+      "practice_idea": "Write a recursive function that computes factorial of n and trace the calls for n equals 4."
+    },
+    {
+      "id": "json-and-apis",
+      "title": "JSON and REST APIs",
+      "summary": "JSON is a common text format for API payloads. REST APIs expose resources over HTTP using methods such as GET and POST.",
+      "prerequisites": ["HTTP basics", "Python dictionaries", "Strings and encoding"],
+      "key_concepts": [
+        "json.loads and json.dumps",
+        "Request and response bodies",
+        "Content-Type application/json",
+        "Reading API documentation"
+      ],
+      "common_mistakes": [
+        "Forgetting to call json.loads on a response text body",
+        "Assuming keys exist in a JSON object without checking",
+        "Sending Python dicts over the wire without serializing to JSON"
+      ],
+      "practice_idea": "Parse a sample JSON object representing a user and print only users who have email_verified set to true."
+    }
+  ]
 }

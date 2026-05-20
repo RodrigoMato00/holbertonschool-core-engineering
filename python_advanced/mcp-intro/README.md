@@ -36,6 +36,7 @@ mcp-intro/
 - **Task 0:** project structure.
 - **Task 1:** MCP architecture summary (this README section).
 - **Task 2:** minimal FastMCP server in `server/learning_server.py`.
+- **Task 3:** local dataset in `data/topics.json` (6 topics).
 
 ## Requirements
 
