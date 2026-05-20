@@ -36,4 +36,19 @@ mcp-intro/
 - **Task 0:** project structure.
 - **Task 1:** MCP architecture summary (this README section).
 
-Setup and run instructions will be added in later tasks.
+## Requirements
+
+- Python **3.10+** (required by FastMCP)
+- `pip install -r requirements.txt`
+
+## Run the MCP server (Task 2+)
+
+From the `mcp-intro` directory:
+
+```bash
+python3 server/learning_server.py
+```
+
+The server uses stdio transport by default. Do not print debug messages to stdout while it runs.
+
+Setup for clients and agents will be added in later tasks.

@@ -1,1 +1,1 @@
-# Task 1+ will add FastMCP and client dependencies.
+fastmcp>=2.0.0
