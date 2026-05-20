@@ -39,6 +39,7 @@ mcp-intro/
 - **Task 3:** local dataset in `data/topics.json` (6 topics).
 - **Task 4:** MCP tool `search_topics` on the server.
 - **Task 5:** MCP tool `get_topic_details` on the server.
+- **Task 6:** read-only resource `topics://catalog`.
 
 ## Requirements
 
