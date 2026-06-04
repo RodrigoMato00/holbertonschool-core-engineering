@@ -8,12 +8,12 @@ from websockets.exceptions import ConnectionClosed
 
 
 async def connection_handler(websocket):
-    """Validate each message; reply OK:{text} or ERR:VACIO."""
+    """Validate each message; reply OK:{text} or ERR:EMPTY."""
     try:
         async for message in websocket:
             trimmed = message.strip()
             if trimmed == "":
-                await websocket.send("ERR:VACIO")
+                await websocket.send("ERR:EMPTY")
             else:
                 await websocket.send(f"OK:{trimmed}")
     except ConnectionClosed:
